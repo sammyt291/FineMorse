@@ -1,0 +1,23 @@
+{
+  "name": "finemorse",
+  "version": "0.1.0",
+  "description": "Live adaptive CW decoding and IC-7300 Morse transmission",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dev:web": "node src/server.cjs",
+    "test": "node --test test/*.test.cjs",
+    "test:ui": "node scripts/smoke.cjs",
+    "test:desktop": "node scripts/desktop.cjs"
+  },
+  "dependencies": {
+    "serialport": "13.0.0"
+  },
+  "devDependencies": {
+    "electron": "39.2.7",
+    "playwright": "1.64.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
